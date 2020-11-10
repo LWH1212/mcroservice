@@ -1,0 +1,28 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: mcroservice-payment #服务名
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource #当前数据操作源
+    driver-class-name:  com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: root
+
+#mybatis配置
+mybatis:
+  mapperLocations: classpath:dao/*.xml
+#  type-aliases-package: com.lwh.pojo
+
+#eureka配置
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+    instance:
+      instance-id: payment8002
+      prefer-ip-address: true

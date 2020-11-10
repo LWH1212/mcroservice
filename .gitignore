@@ -1,0 +1,12 @@
+# Project exclude paths
+/cloud-api-commons/target/
+/cloud-consumer-feign-hystrix-order/target/
+/cloud-consumer-feign-order/target/
+/cloud-consumer-hystrix-dashboar/target/
+/cloud-consumer-order/target/
+/cloud-eureka-server/target/
+/cloud-eureka-server02/target/
+/cloud-gateway-gateway9527/target/
+/cloud-provide-payment/target/
+/cloud-provide-payment02/target/
+/cloud-provider-hystrix-payment8001/target/
